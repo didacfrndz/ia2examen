@@ -134,10 +134,15 @@ h2{
 }
 .tarjeta{
     background-color: white;
-    
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #6462711e;
+    border-radius: 20px;
 }
 .imgtarjeta{
         width: 500px;
+        height: 500px;
+
 }
 .talleres{
         display: flex;
@@ -146,4 +151,5 @@ h2{
 .taller{
     font-size: 70px;
     line-height: 0px;
+    
 }   
