@@ -1,155 +1,218 @@
-/*
-* GENERAL
-*/
-body{
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: #181724;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 20px 10% 20px 10%;
+    padding: 20px 8%;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow-x: hidden;
 }
-p{
-    font-size: 50px;
+
+p {
+    font-size: 22px;
 }
-.textoverde{
+
+.textoverde {
     color: #caff52;
 }
-.textogris{
+
+.textogris {
     color: #646271;
 }
-.textoblanco{
+
+.textoblanco {
     color: white;
 }
-.icono{
-    width: 45px;
-}
-/*
-! HEADER
-*/
 
-header{
+.icono {
+    width: 35px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
     border-bottom: 1px solid #646271;
+    padding-bottom: 20px;
 }
 
-nav ul{
+nav ul {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     gap: 30px;
     list-style: none;
 }
-li{
-    font-size: 45px;
+
+li {
+    font-size: 20px;
 }
-#logoNova{
-    width: 60%;
+
+#logoNova {
+    width: 180px;
+    max-width: 100%;
 }
-.inscribir{
+
+.inscribir {
     width: fit-content;
     background-color: #caff52;
     color: black;
-    padding: 40px;
+    padding: 18px 28px;
     border-radius: 8px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: fit-content;
-    font-size: 45px;
+    font-size: 20px;
+    white-space: nowrap;
 }
 
 
-/*
-! MAIN
-*/
+/* =========================
+   MAIN
+========================= */
 
-/*
-? section 1
-*/
-.section1{
+/* SECTION 1 */
+
+.section1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    gap: 50px;
     margin-top: 60px;
 }
-.titulo{
+
+.titulo {
     width: 50%;
     height: fit-content;
 }
-#puntoverde{
+
+#puntoverde {
     font-weight: 900;
 }
-h1{
-    font-size: 220px;
-    line-height: 90%;
+
+h1 {
+    font-size: 120px;
+    line-height: 0.9;
+    letter-spacing: -5px;
 }
-.imghero{
-    width: 1200px;
-    height: 1200px;
+
+.imghero {
+    width: 50%;
+    max-width: 650px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
     position: relative;
+    border-radius: 15px;
 }
 
-#diasitio{
+#diasitio {
     display: flex;
     flex-direction: row;
-    img{
-        stroke: #646271;
-    }
+    align-items: center;
+    gap: 15px;
 }
-/*
-?sect2
-*/
-.section2{
-    margin-top: 10%;
-    display:  flex ;
+
+#diasitio img {
+    stroke: #646271;
+}
+
+
+/* =========================
+   SECTION 2
+========================= */
+
+.section2 {
+    margin-top: 8%;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    gap: 30px;
     width: 100%;
+    flex-wrap: wrap;
 }
-.fondoverde{
+
+.fondoverde {
     background-color: #caff52;
+    color: #181724;
 }
 
-/*
-? sect3
-*/
+/* =========================
+   SECTION 3
+========================= */
 
-.section3{
-    padding-top:50px ;
-    padding-left: 460px;
+.section3 {
+    margin-top: 80px;
+    padding: 60px 6%;
     background-color: #f5f4ee;
-    
+    color: #181724;
+}
 
+h2 {
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 50px;
 }
-h2{
-        font-size: 130px;
-    }
-    .tarjetas{
+
+.tarjetas {
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    gap: 25px;
 }
-.tarjeta{
+
+.tarjeta {
     background-color: white;
     display: flex;
     flex-direction: column;
     border: 1px solid #6462711e;
     border-radius: 20px;
+    overflow: hidden;
+    width: 33.33%;
 }
-.imgtarjeta{
-        width: 500px;
-        height: 500px;
 
+.imgtarjeta {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
-.talleres{
-        display: flex;
-        justify-content: space-between;
+
+.talleres {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
 }
-.taller{
-    font-size: 70px;
-    line-height: 0px;
-    
-}   
+
+.taller {
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 0 20px;
+}
+
+.tarjeta > p {
+    margin: 15px 20px;
+}
+
+
+
